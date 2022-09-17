@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    background: blue;
+    padding: 30px;
+}
+li{
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 8px 4px;
+    
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    background-color: rgba(255, 255, 255, 0.223);
+    border-radius: 20px;
+}
+.logo-box{
+    display: flex;
+}
+.mobile-menu-bar{
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    display: none;
+}
+.logo{
+    color: black;
+}
+.logo-name{
+    font-size: larger;
+    color: white;
+}
+.fa-solid{
+    font-size: large;
+    color: white;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+}
+.devider{
+    background-color: rgba(255, 255, 255, 0.438);
+    height: 1px;
+    margin: 30px 0;
+    padding: 0;
+}
+nav{
+   width: 20%; 
+}
+.devider:hover{
+     background-color: none;
+}
+main{
+    width: 80%;
+    padding: 10px 20px;
+}
+article{
+    background-color: white;
+    padding: 0 10px 10px 30px;
+    border-radius: 40px;
+    width: 100%;
+    /* height: ; */
+}
+.top-bar{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;  
+    flex-wrap: wrap;
+    height: 50px;
+}
+.breadcrumbs, .right-crumbs{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.breadcrumbs{
+    justify-content: flex-start;
+}
+.right-crumbs{
+    justify-content: flex-end;
+}
+.green-dot{
+    height: 10px;
+    background-color: green;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red-dot{
+    height: 10px;
+    background-color: red;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+h4 {
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+.term{
+    margin-right: 0;
+}
+.search-bar{
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 20px;  
+}
+.fa-regular{
+    position: relative;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 10px;
+    /* width: 100%; */
+}
+
+.general-report, .bills, .pta, .quote{
+    background-color: red;
+    grid-column: span 12;
+}
+
+.class-report, .check-result{
+    background-color: green;
+    grid-column: span 6;
+}
+.greeting{
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width:760px) {
+    .mobile-menu-bar{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+    }
+        
+    .class-report, .check-result{
+        background-color: green;
+        grid-column: span 12;
+    }
+}
