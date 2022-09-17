@@ -129,25 +129,45 @@ h4 {
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, auto);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(50px, auto);
     grid-gap: 10px;
     /* width: 100%; */
 }
 
 .general-report, .bills, .pta, .quote{
-    background-color: red;
+    background-color: rgb(56, 52, 52);
     grid-column: span 12;
 }
 
 .class-report, .check-result{
-    background-color: green;
+    background-color: rgb(78, 96, 78);
     grid-column: span 6;
 }
 .greeting{
     display: flex;
     width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
 }
-
+.cont {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.class-btn, .status{
+    width: 50%;
+    height: 100%;
+}
+.class-btn{
+    background-color: white;
+    text-align: end;
+}
+.status{
+    text-align: ;
+}
 @media screen and (max-width:760px) {
     .mobile-menu-bar{
         display: flex;
