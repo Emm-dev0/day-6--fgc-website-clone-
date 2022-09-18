@@ -64,8 +64,8 @@ main{
     padding: 10px 20px;
 }
 article{
-    background-color: white;
-    padding: 0 10px 10px 30px;
+    background-color: rgb(222, 241, 247);
+    padding: 0 15px 10px 15px;
     border-radius: 40px;
     width: 100%;
     /* height: ; */
@@ -130,18 +130,20 @@ h4 {
     display: grid;
     grid-template-columns: repeat(12, auto);
     grid-auto-rows: minmax(50px, auto);
-    grid-gap: 10px;
+    grid-gap: 30px;
     /* width: 100%; */
 }
 
 .general-report, .bills, .pta, .quote{
-    background-color: rgb(56, 52, 52);
+    background-color: rgb(255, 255, 255);
     grid-column: span 12;
+    border-radius: 10px;
 }
 
 .class-report, .check-result{
-    background-color: rgb(78, 96, 78);
+    background-color: rgb(255, 255, 255);
     grid-column: span 6;
+    border-radius: 10px;
 }
 .greeting{
     display: flex;
@@ -150,27 +152,110 @@ h4 {
     padding: 0 20px;
     justify-content: space-between;
 }
+.greeting a{
+    color: blue;
+}
 .cont {
+    position: relative;
     display: flex;
+    flex-direction: column;
     height: 150px;
     width: 100%;
+    padding: 10px 20px 10px 20px;
+  
     /* align-items: center; */
     /* justify-content: space-between; */
 }
-.class-btn, .status{
-    width: 50%;
-    height: 100%;
+
+#hov:hover{
+    width: 102%;
 }
 .class-btn{
-    background-color: white;
+    height: 30%;
     text-align: end;
 }
-.status{
-    text-align: ;
+.offset{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.637);
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 10%;
+    bottom: -20px;
+   
 }
+.status .graduated {
+    color: greenyellow;
+    margin-top: 10%;
+}
+.status{
+    height: 70%;
+}
+.status h3{
+  margin: 0;
+  color: rgba(0, 0, 0, 0.535);
+  font-size: medium;
+}
+.status h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.current-class, .check-result-btn, .current-bil, .pending, .history, .pay-pta{
+    padding: 10px 8px;
+    color: white;
+    background-color: greenyellow;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+.current-class{
+    border-radius: 15px;
+}
+.check-result-btn{
+    background-color: blue;
+}
+.bills{
+    background-color: rgb(222, 241, 247);
+}
+.current-bill, .pending-payment, .payment-history{
+    grid-column: span 4;
+    background-color: white;
+}
+.current-bil{
+    background-color: rgb(101, 101, 251);
+}
+.history{
+    background-color: orange;
+}
+.box1{
+    padding: 10px 10px;
+}
+.box1 h4{
+    margin: 5px ;
+}
+.box1 .devider{
+    background-color: rgba(0, 0, 0, 0.311);
+    margin: 0;
+}
+.box1 p{
+    font-size: small;
+}
+.pay-pta{
+    background-color: rgba(128, 0, 128, 0.473);
+}
+
 @media screen and (max-width:760px) {
     .mobile-menu-bar{
         display: flex;
+    }
+        
+    .breadcrumbs, .right-crumbs input{
+        display: none;
+    }
+    .right-crumbs{
+        width: 100%;
+        justify-content: space-between;
     }
     nav{
         display: none;
@@ -181,7 +266,12 @@ h4 {
     }
         
     .class-report, .check-result{
-        background-color: green;
+        background-color: rgb(255, 255, 255);
         grid-column: span 12;
     }
+    
+    .current-bill, .pending-payment, .payment-history{
+        grid-column: span 12;
+    }
+      
 }
