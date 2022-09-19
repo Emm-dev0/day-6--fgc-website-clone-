@@ -6,6 +6,7 @@
 body{
     background: blue;
     padding: 30px;
+
 }
 li{
     list-style: none;
@@ -218,6 +219,11 @@ h4 {
 .bills{
     background-color: rgb(222, 241, 247);
 }
+ span{
+    font-size: larger;
+    font-weight: 500;
+   margin-bottom: 40px;
+}
 .current-bill, .pending-payment, .payment-history{
     grid-column: span 4;
     background-color: white;
@@ -246,8 +252,13 @@ h4 {
 }
 
 @media screen and (max-width:760px) {
-    .mobile-menu-bar{
+        
+    body{
+        padding: 30px 5px;
+    }
+        .mobile-menu-bar{
         display: flex;
+        width: 100%;
     }
         
     .breadcrumbs, .right-crumbs input{
@@ -261,8 +272,11 @@ h4 {
         display: none;
     }
     main{
-        width: 100%;
+        width: auto;
         padding: 0;
+    }
+    .main-container{
+        width: auto;
     }
         
     .class-report, .check-result{
