@@ -156,6 +156,15 @@ h4 {
 .greeting a{
     color: blue;
 }
+.fa-rotate{
+    color: blue;
+}
+i{
+    margin-right: 4px;
+}
+.fa-folder-closed{
+    color: white;
+}
 .cont {
     position: relative;
     display: flex;
@@ -187,7 +196,7 @@ h4 {
    
 }
 .status .graduated {
-    color: greenyellow;
+    color: rgb(129, 196, 30);
     margin-top: 10%;
 }
 .status{
@@ -205,7 +214,7 @@ h4 {
 .current-class, .check-result-btn, .current-bil, .pending, .history, .pay-pta{
     padding: 10px 8px;
     color: white;
-    background-color: greenyellow;
+    background-color: rgb(129, 196, 30);
     border-radius: 5px;
     font-weight: 600;
     border: none;
@@ -219,10 +228,10 @@ h4 {
 .bills{
     background-color: rgb(222, 241, 247);
 }
- span{
+ .span{
     font-size: larger;
-    font-weight: 500;
-   margin-bottom: 40px;
+    font-weight: 50;
+   margin-bottom: 25px;
 }
 .current-bill, .pending-payment, .payment-history{
     grid-column: span 4;
@@ -238,7 +247,7 @@ h4 {
     padding: 10px 10px;
 }
 .box1 h4{
-    margin: 5px ;
+    margin-top: 5px;
 }
 .box1 .devider{
     background-color: rgba(0, 0, 0, 0.311);
