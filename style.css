@@ -16,7 +16,6 @@ a{
     text-decoration: none;
     color: white;
 }
-
 li:hover{
     background-color: rgba(255, 255, 255, 0.223);
     border-radius: 20px;
@@ -129,7 +128,6 @@ h4 {
     grid-template-columns: repeat(12, auto);
     grid-auto-rows: minmax(50px, auto);
     grid-gap: 30px;
-    /* width: 100%; */
 }
 
 .general-report, .bills, .pta, .quote{
