@@ -167,9 +167,6 @@ i{
     height: 150px;
     width: 100%;
     padding: 10px 20px 10px 20px;
-  
-    /* align-items: center; */
-    /* justify-content: space-between; */
 }
 
 #hov:hover{
@@ -188,7 +185,6 @@ i{
     position: absolute;
     left: 10%;
     bottom: -20px;
-   
 }
 .status .graduated {
     color: rgb(129, 196, 30);
