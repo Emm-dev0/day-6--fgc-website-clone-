@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-
 }
 
 html, body{
@@ -10,21 +9,23 @@ html, body{
 }
 body{
     background: blue;
+<<<<<<< HEAD
     padding: 30px 10px;
 
+=======
+    padding: 30px:
+>>>>>>> 36a92996d77af5d6dc84f61a1de635e34a36f949
 }
 li{
     list-style: none;
     margin-bottom: 5px;
     padding: 8px 4px;
-    
 }
 a{
     font-size: 0.75rem;
     text-decoration: none;
     color: white;
 }
-
 li:hover{
     background-color: rgba(255, 255, 255, 0.223);
     border-radius: 20px;
@@ -139,12 +140,15 @@ h4 {
     grid-template-columns: repeat(12, auto);
     grid-auto-rows: minmax(50px, auto);
     grid-gap: 30px;
+<<<<<<< HEAD
     width: auto;
 }
 .general-report{
     background-color: none;
     grid-column: span 12;
     border-radius: 10px;
+=======
+>>>>>>> 36a92996d77af5d6dc84f61a1de635e34a36f949
 }
 
  .bills, .pta, .quote{
@@ -185,9 +189,6 @@ i{
     height: 150px;
     width: 100%;
     padding: 10px 20px 10px 20px;
-  
-    /* align-items: center; */
-    /* justify-content: space-between; */
 }
 
 #hov:hover{
@@ -206,7 +207,6 @@ i{
     position: absolute;
     left: 10%;
     bottom: -20px;
-   
 }
 .status .graduated {
     color: rgb(129, 196, 30);
