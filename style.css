@@ -3,9 +3,14 @@
     font-family: 'Courier New', Courier, monospace;
 
 }
+
+html, body{
+    max-width: 100%;
+     overflow-x: hidden;
+}
 body{
     background: blue;
-    padding: 30px;
+    padding: 30px 10px;
 
 }
 li{
@@ -15,7 +20,7 @@ li{
     
 }
 a{
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-decoration: none;
     color: white;
 }
@@ -75,8 +80,10 @@ article{
     display: flex;
     /* justify-content: space-between; */
     width: 100%;  
+    /* margin-bottom: 20px; */
     flex-wrap: wrap;
-    height: 50px;
+    height: auto;
+    line-height: 0px;
 }
 .breadcrumbs, .right-crumbs{
     display: flex;
@@ -132,10 +139,15 @@ h4 {
     grid-template-columns: repeat(12, auto);
     grid-auto-rows: minmax(50px, auto);
     grid-gap: 30px;
-    /* width: 100%; */
+    width: auto;
+}
+.general-report{
+    background-color: none;
+    grid-column: span 12;
+    border-radius: 10px;
 }
 
-.general-report, .bills, .pta, .quote{
+ .bills, .pta, .quote{
     background-color: rgb(255, 255, 255);
     grid-column: span 12;
     border-radius: 10px;
@@ -145,6 +157,7 @@ h4 {
     background-color: rgb(255, 255, 255);
     grid-column: span 6;
     border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .greeting{
     display: flex;
@@ -260,14 +273,20 @@ i{
     background-color: rgba(128, 0, 128, 0.473);
 }
 
+.nav-list{
+    display: none;
+}
 @media screen and (max-width:760px) {
         
     body{
-        padding: 30px 5px;
+        padding: 30px 10px;
     }
         .mobile-menu-bar{
         display: flex;
-        width: 100%;
+        min-width: 100%;
+    }
+    .top-bar{
+        margin-top: 30px;
     }
         
     .breadcrumbs, .right-crumbs input{
@@ -280,8 +299,16 @@ i{
     nav{
         display: none;
     }
+    .nav-list{
+        display: none;
+        transition: 3s ease-in;
+    }
+    .nav-list.active{
+        display: flex;
+        flex-direction: column;
+    }
     main{
-        width: auto;
+        width: 100vw;
         padding: 0;
     }
     .main-container{
@@ -296,5 +323,22 @@ i{
     .current-bill, .pending-payment, .payment-history{
         grid-column: span 12;
     }
+    
+.current-class, .check-result-btn, .current-bil, .pending, .history, .pay-pta{
+    padding: 8px 5px;
+    color: white;
+    /* background-color: rgb(129, 196, 30); */
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+}
+
+.status h3{
+    font-size: small;
+  }
+  .status h2{
+      margin-top: 30px;
+      margin-bottom: 0;
+  }
       
 }
