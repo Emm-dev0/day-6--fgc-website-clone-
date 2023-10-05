@@ -1,4 +1,4 @@
-# day-6--fgc-website-clone-
+# Fgc-website-clone-
 federal governmant college warri (FGCW) school portal clone.
 
 As part of my learning i decided to rebuild my secondary school portal website.
