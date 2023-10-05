@@ -11,6 +11,8 @@ this is a simple site made with html and css, I will do a react version of this 
 
 I have a lot to learn and keep learning.
 
-##Expectations soon.
-- a react version of this website
+## Expectations soon.
+- a react version of this website.
+- backend implemented and fully functional.
+
 
